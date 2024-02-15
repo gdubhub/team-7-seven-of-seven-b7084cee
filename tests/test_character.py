@@ -12,7 +12,8 @@ class TestCharacter(TestCase):
         testObj = Character("Matt")
         assert testObj.name == "Matt"
 
-#   def test_enterMap(GameMap):
-#      assert testObj.currentPosition != None
+    def test_enterMap(GameMap):
+        testObj = Character.enterMap()
+        assert testObj.currentPosition != None
 
         

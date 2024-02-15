@@ -6,5 +6,5 @@ class Character:
     def __init__(self,character_name = default_name):
         self.name = character_name
 
-    def enterMap(GameMap):
-        pass
+    def enterMap():
+        currentPosition = GameMap()
