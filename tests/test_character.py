@@ -19,4 +19,10 @@ class TestCharacter(TestCase):
         self.assertEqual(stubbed_map, testobj.map)
         self.assertEqual(testobj.currentPosition, stubbed_map.startingPosition)
 
+  #  def test_move(self):
+  #      direction = "NORTH"
+  #      currentposition = (5,5)
+  #      newposition = (5,6)
+  
+
         
