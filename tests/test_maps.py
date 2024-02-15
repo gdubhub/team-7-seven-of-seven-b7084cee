@@ -25,3 +25,28 @@ class TestMap(TestCase):
         position = GameMap.calculate_position((5,5), "WEST")
         assert position == (4,5)
         
+
+    def test_isPositionValid_1(testmap):
+        testmap = GameMap(10,10,(5,5))
+        result = GameMap.isPositionValid(testmap, (0,0))
+        assert result == True
+
+    def test_isPositionValid_1(testmap):
+        testmap = GameMap(10,10,(5,5))
+        result = GameMap.isPositionValid(testmap, (5,5))
+        assert result == True
+
+    def test_isPositionValid_1(testmap):
+        testmap = GameMap(10,10,(5,5))
+        result = GameMap.isPositionValid(testmap, (9,0))
+        assert result == True
+
+    def test_isPositionValid_1(testmap):
+        testmap = GameMap(10,10,(5,5))
+        result = GameMap.isPositionValid(testmap, (10,0))
+        assert result == False
+
+    def test_isPositionValid_1(testmap):
+        testmap = GameMap(10,10,(5,5))
+        result = GameMap.isPositionValid(testmap, (25,25))
+        assert result == False

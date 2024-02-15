@@ -14,3 +14,16 @@ class GameMap:
         if direction == "WEST":
             position = (currentPosition[0] - 1, currentPosition[1])
         return position
+
+    def isPositionValid(self, positionCoordiate):
+        if positionCoordiate[0] < 0:
+            result = False
+        if positionCoordiate[1] < 0:
+            result = False
+        if positionCoordiate[0] > self.width - 1:
+            result = False
+        if positionCoordiate[1] > self.length - 1:
+            result = False
+        else:
+            result = True
+        return result
