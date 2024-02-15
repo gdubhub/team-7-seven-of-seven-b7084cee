@@ -1,5 +1,7 @@
 *** Settings ***
-Documentation   I want to move my character.  If they attempt to move past a boundary, the move results in no change to prosition.\n http://arcbotics.com/wp-content/uploads/2015/12/sparki-driver-icon.png
+Documentation
+...     I want to move my character.  If they attempt to move past a boundary, the move results in no change to prosition.
+...     http://arcbotics.com/wp-content/uploads/2015/12/sparki-driver-icon.png
 Test Template   Move character
 Library         MoveLibrary.py
 
