@@ -1,9 +1,9 @@
 from unittest import TestCase
-from maps import GameMap
+from levelup.maps import GameMap
 
 class TestMap(TestCase):
     def test_init(self):
-        testmap = GameMap()
-        assert GameMap.length != None
-        assert GameMap.width != None
-        assert GameMap.starting_position != None
+        testmap = GameMap(10,10,(5,5))
+        assert testmap.length != None
+        assert testmap.width != None
+        assert testmap.starting_position != None
