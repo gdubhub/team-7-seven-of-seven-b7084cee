@@ -7,14 +7,14 @@ class MoveLibrary:
 
     controller = GameController()
 
-    def initialize_character_xposition_with(self, StartingX):
-        self.start_x = StartingX
+    def initialize_character_xposition_with(self, startingX):
+        self.start_x = startingX
 
-    def initialize_character_yposition_with(self, StartingY):
-        self.start_y= StartingY
+    def initialize_character_yposition_with(self, startingY):
+        self.start_y= startingY
 
     def move_in_direction(self, direction):
-        self.controller.set_character_position((self.StartingX, self.StartingY))
+        self.controller.set_character_position((self.startingX, self.startingY))
         self.controller.move(Direction[direction])
         
     def character_xposition_should_be(self, expected):
