@@ -1,3 +1,5 @@
+from stub_maps import GameMap
+
 class Character:
     default_name = "Billy Bob"
     
