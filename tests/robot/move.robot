@@ -17,10 +17,10 @@ Move W from SW corner       0           0           WEST        0       0
 Move N from W Edge          0           5           NORTH       0       6
 *** Keywords ***
 Move character
-    [Arguments] ${StartingX} $[StartingY}   ${Direction}    ${EndingX}  ${EndingY}
-    Initialize character xposition with     ${StartingX}
-    Initialize character yposition with     ${StartingY}
+    [Arguments] ${startingX} ${startingY}   ${direction}    ${endingX}  ${endingY}
+    Initialize character xposition with     ${startingX}
+    Initialize character yposition with     ${startingY}
     Move in direction                       ${direction}
-    Character xposition should be           ${EndingX}
-    Character yposition should be           ${EndingY}
+    Character xposition should be           ${endingX}
+    Character yposition should be           ${endingY}
 
