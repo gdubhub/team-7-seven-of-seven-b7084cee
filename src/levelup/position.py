@@ -7,7 +7,7 @@ class position:
         self.yCoordinate = yCoordinate
 
     def __eq__(self,obj):
-        if self.xCoordinate == obj.x and self.yCoordinate == obj.yCoordinate:
+        if self.xCoordinate == obj.xCoordinate and self.yCoordinate == obj.yCoordinate:
             return True
         else:
             return False 
