@@ -8,10 +8,5 @@ from levelup.position import position
 class TestPosition(TestCase):
     def test_init(self):
         testObj = position()
-        assert testObj.xCoordinate != None  
-    def test_init(self):
-        testObj = position()
+        assert testObj.xCoordinate != None
         assert testObj.yCoordinate != None
-    def test_init(self):
-        testObj = position()
-        assert testObj.xyCoordinate != None

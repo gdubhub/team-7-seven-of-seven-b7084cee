@@ -2,11 +2,13 @@ class position:
     default_yCoordinate = 2
     default_xCoordinate = 4
     
-    def __init__(self, xCoordinate = default_xCoordinate):
+    def __init__(self, xCoordinate = default_xCoordinate, yCoordinate=default_yCoordinate):
         self.xCoordinate = xCoordinate
-    def __init__(self,yCoordinate = default_yCoordinate):
         self.yCoordinate = yCoordinate
-    def __init__(self, xyCoordinate = (default_xCoordinate,default_yCoordinate)):
-        self.xyCoordinate = xyCoordinate
 
+    def __eq__(self,obj):
+        if self.xCoordinate == obj.x and self.yCoordinate == obj.yCoordinate:
+            return True
+        else:
+            return False 
         
