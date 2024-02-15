@@ -1,4 +1,5 @@
 from stub_maps import GameMap
+from stub_position import position
 
 class Character:
     default_name = "Billy Bob"
@@ -7,4 +8,5 @@ class Character:
         self.name = character_name
 
     def enterMap():
-        currentPosition = GameMap()
+        self.currentPosition = GameMap.startingPosition
+

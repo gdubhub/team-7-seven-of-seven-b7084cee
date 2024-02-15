@@ -2,7 +2,6 @@ from unittest import TestCase
 from unittest.mock import MagicMock, create_autospec
 from levelup.character import Character
 
-
 class TestCharacter(TestCase):
     def test_init(self):
         testObj = Character()
@@ -12,7 +11,7 @@ class TestCharacter(TestCase):
         testObj = Character("Matt")
         assert testObj.name == "Matt"
 
-    def test_enterMap(GameMap):
+    def test_enterMap(self):
         testObj = Character.enterMap()
         assert testObj.currentPosition != None
 
