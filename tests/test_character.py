@@ -6,3 +6,10 @@ class TestCharacter(TestCase):
     def test_init(self):
         testObj = Character()
         assert testObj.name != None
+
+    def  test_init(self):
+        testObj = Character("Matt")
+        assert testObj.name == "Matt"
+
+    def test_enterMap(GameMap):
+        pass
