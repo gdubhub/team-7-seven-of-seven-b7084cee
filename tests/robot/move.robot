@@ -50,12 +50,15 @@ Move W from Edge95          9               5           51                    WE
 Move W from Edge96          9               6           52                    WEST          9           6           53
 Move W from Edge97          9               7           53                    WEST          9           7           54
 Move W from Edge98          9               8           54                    WEST          9           8           55
+
+
 *** Keywords ***
 Move character
-    [Arguments]     ${startingX}    ${startingY}    ${direction}    ${endingX}  ${endingY}
-    Initialize character xposition with     ${startingX}
-    Initialize character yposition with     ${startingY}
-    Move in direction                       ${direction}
-    Character xposition should be           ${endingX}
-    Character yposition should be           ${endingY}
-    
+    [Arguments]    ${startingX}    ${startingY}    ${startingMoveCount}    ${direction}    ${endingX}    ${endingY}    ${endingMoveCount}
+    Initialize character xposition with  ${startingX}
+    Initialize character yposition with  ${startingY}
+    Initialize character moveCount with  ${startingMoveCount}
+    Move in direction                    ${direction}
+    Character xposition should be        ${endingX}
+    Character yposition should be        ${endingY}
+    Character moveCount should be        ${endingMoveCount}
