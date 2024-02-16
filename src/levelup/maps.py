@@ -18,11 +18,11 @@ class GameMap:
     def isPositionValid(self, positionCoordiate):
         if positionCoordiate[0] < 0:
             result = False
-        if positionCoordiate[1] < 0:
+        elif positionCoordiate[1] < 0:
             result = False
-        if positionCoordiate[0] > self.width - 1:
+        elif positionCoordiate[0] > self.width - 1:
             result = False
-        if positionCoordiate[1] > self.length - 1:
+        elif positionCoordiate[1] > self.length - 1:
             result = False
         else:
             result = True

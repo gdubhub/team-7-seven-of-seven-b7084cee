@@ -17,7 +17,7 @@ class TestCharacter(TestCase):
         stubbed_map = GameMap()
         testobj.enterMap(stubbed_map)
         self.assertEqual(stubbed_map, testobj.map)
-        self.assertEqual(testobj.currentPosition, stubbed_map.startingPosition)
+        self.assertEqual(testobj.currentPosition, stubbed_map.starting_position)
 
   #  def test_move(self):
   #      direction = "NORTH"

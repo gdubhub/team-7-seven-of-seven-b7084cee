@@ -1,5 +1,5 @@
 class GameMap:
-    def __init__(self, width = 10, length = 10, startingPosition = (5,5)):
+    def __init__(self, width = 10, length = 10, starting_position = (5,5)):
         self.width = width
         self.length = length
-        self.startingPosition = startingPosition
+        self.starting_position = starting_position

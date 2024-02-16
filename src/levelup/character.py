@@ -10,5 +10,5 @@ class Character:
 
     def enterMap(self, map):
         self.map = map
-        self.currentPosition = self.map.startingPosition
+        self.currentPosition = self.map.starting_position
 
