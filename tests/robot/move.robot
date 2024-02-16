@@ -34,22 +34,22 @@ Move S from Edge60          6               0           35                    SO
 Move S from Edge70          7               0           36                    SOUTH         7           0           37
 Move S from Edge80          8               0           37                    SOUTH         8           0           38
 Move S from Edge90          9               0           38                    SOUTH         9           0           39
-Move E from Edge01          0               1           39                    EAST          0           1           40
-Move E from Edge02          0               2           40                    EAST          0           2           41
-Move E from Edge03          0               3           41                    EAST          0           3           42
-Move E from Edge04          0               4           42                    EAST          0           4           43
-Move E from Edge05          0               5           43                    EAST          0           5           44
-Move E from Edge06          0               6           44                    EAST          0           6           45
-Move E from Edge07          0               7           45                    EAST          0           7           46
-Move E from Edge08          0               8           46                    EAST           0           8           47    
-Move W from Edge91          9               1           47                    WEST          9           1           48
-Move W from Edge92          9               2           48                    WEST          9           2           49
-Move W from Edge93          9               3           49                    WEST          9           3           50
-Move W from Edge94          9               4           50                    WEST          9           4           51
-Move W from Edge95          9               5           51                    WEST          9           5           52
-Move W from Edge96          9               6           52                    WEST          9           6           53
-Move W from Edge97          9               7           53                    WEST          9           7           54
-Move W from Edge98          9               8           54                    WEST          9           8           55
+Move E from Edge01          0               1           39                    EAST          1           1           40
+Move E from Edge02          0               2           40                    EAST          1           2           41
+Move E from Edge03          0               3           41                    EAST          1           3           42
+Move E from Edge04          0               4           42                    EAST          1           4           43
+Move E from Edge05          0               5           43                    EAST          1           5           44
+Move E from Edge06          0               6           44                    EAST          1           6           45
+Move E from Edge07          0               7           45                    EAST          1           7           46
+Move E from Edge08          0               8           46                    EAST          1           8           47    
+Move W from Edge91          9               1           47                    WEST          8           1           48
+Move W from Edge92          9               2           48                    WEST          8           2           49
+Move W from Edge93          9               3           49                    WEST          8           3           50
+Move W from Edge94          9               4           50                    WEST          8           4           51
+Move W from Edge95          9               5           51                    WEST          8           5           52
+Move W from Edge96          9               6           52                    WEST          8           6           53
+Move W from Edge97          9               7           53                    WEST          8           7           54
+Move W from Edge98          9               8           54                    WEST          8           8           55
 
 
 *** Keywords ***
