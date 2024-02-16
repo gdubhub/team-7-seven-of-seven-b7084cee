@@ -41,7 +41,7 @@ Move E from Edge04          0               4           42                    EA
 Move E from Edge05          0               5           43                    EAST          0           5           44
 Move E from Edge06          0               6           44                    EAST          0           6           45
 Move E from Edge07          0               7           45                    EAST          0           7           46
-Move E from Edge08          0               8           46                    AST           0           8           47    
+Move E from Edge08          0               8           46                    EAST           0           8           47    
 Move W from Edge91          9               1           47                    WEST          9           1           48
 Move W from Edge92          9               2           48                    WEST          9           2           49
 Move W from Edge93          9               3           49                    WEST          9           3           50
