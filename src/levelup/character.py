@@ -1,14 +1,26 @@
-from maps import GameMap
-from position import position
+from levelup.position import position
+from levelup.direction import Direction
+from levelup.maps import GameMap
+
+DEFAULT_CHARACTER_NAME = "Character"
 
 class Character:
-    default_name = "Billy Bob"
-    map = GameMap()
+    # In python, we don't use getters. So no getPosition or getName for this class
+    name = ""
+    current_position :position = position(-100,-100)
+    map = GameMap(10,10,(5,5))
 
-    def __init__(self,character_name = default_name):
-        self.name = character_name
+    # Since python doesn't do method overloading, this is how we support a constructor with optional parameters
+    def __init__(self, character_name=DEFAULT_CHARACTER_NAME):
+        if character_name.strip() == '':
+            self.name = DEFAULT_CHARACTER_NAME
+        else:
+            self.name = character_name
 
-    def enterMap(self, map):
+    def move(self, direction :Direction) -> None:
+        self.current_position = self.map.calculate_new_position(
+            self.current_position, direction)
+    
+    def enter_map(self, map):
         self.map = map
-        self.currentPosition = self.map.starting_position
-
+        self.current_position = self.map.starting_position

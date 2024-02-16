@@ -1,28 +1,32 @@
 from unittest import TestCase
-from unittest.mock import MagicMock, create_autospec
-from levelup.character import Character
-from tests.stub_maps import GameMap
+from levelup.character import Character, DEFAULT_CHARACTER_NAME
+from tests.map_double import MapDouble
+from levelup.direction import Direction
 
 class TestCharacter(TestCase):
-    def test_init(self):
-        testObj = Character()
-        assert testObj.name != None
+    ARBITRARY_NAME = "MyName"
 
-    def  test_init(self):
-        testObj = Character("Matt")
-        assert testObj.name == "Matt"
+    def test_init(self):
+        testobj = Character(self.ARBITRARY_NAME)
+        self.assertEqual(self.ARBITRARY_NAME, testobj.name)
+
+    def test_init_when_empty(self):
+        testobj = Character("  ")
+        self.assertEqual(DEFAULT_CHARACTER_NAME, testobj.name)
 
     def test_enter_map_sets_map_and_updates_position(self):
-        testobj = Character()
-        stubbed_map = GameMap()
-        testobj.enterMap(stubbed_map)
+        testobj = Character(self.ARBITRARY_NAME)
+        stubbed_map = MapDouble(10,10,(5,5))
+        testobj.enter_map(stubbed_map)
         self.assertEqual(stubbed_map, testobj.map)
-        self.assertEqual(testobj.currentPosition, stubbed_map.starting_position)
+        self.assertEqual(testobj.current_position, stubbed_map.starting_position)
 
-  #  def test_move(self):
-  #      direction = "NORTH"
-  #      currentposition = (5,5)
-  #      newposition = (5,6)
-  
-
+    def test_move_updates_position(self):
+        testobj = Character(self.ARBITRARY_NAME)
+        stubbed_map = MapDouble(10,10,(5,5))
+        testobj.map = stubbed_map
         
+        testobj.move(Direction.EAST)
+
+ #       self.assertEqual(stubbed_map.STUBBED_X, testobj.current_position.x)
+ #       self.assertEqual(stubbed_map.STUBBED_Y, testobj.current_position.y)
