@@ -1,9 +1,11 @@
 from unittest import TestCase
-from unittest.mock import MagicMock, create_autospec
-from levelup.position import position
+from levelup.position import Position
 
-class TestPosition(TestCase):
+
+class TestPositionInitWithXY(TestCase):
     def test_init(self):
-        testObj = position()
-        assert testObj.xCoordinate != None
-        assert testObj.yCoordinate != None
+        ARBITRARY_X = 3
+        ARBITRARY_Y = 4
+        testobj = Position(3,4)
+        self.assertEqual(ARBITRARY_X, testobj.x)
+        self.assertEqual(ARBITRARY_Y, testobj.y)

@@ -16,17 +16,17 @@ class TestCharacter(TestCase):
 
     def test_enter_map_sets_map_and_updates_position(self):
         testobj = Character(self.ARBITRARY_NAME)
-        stubbed_map = MapDouble(10,10,(5,5))
+        stubbed_map = MapDouble()
         testobj.enter_map(stubbed_map)
         self.assertEqual(stubbed_map, testobj.map)
         self.assertEqual(testobj.current_position, stubbed_map.starting_position)
 
     def test_move_updates_position(self):
         testobj = Character(self.ARBITRARY_NAME)
-        stubbed_map = MapDouble(10,10,(5,5))
+        stubbed_map = MapDouble()
         testobj.map = stubbed_map
         
         testobj.move(Direction.EAST)
 
- #       self.assertEqual(stubbed_map.STUBBED_X, testobj.current_position.x)
- #       self.assertEqual(stubbed_map.STUBBED_Y, testobj.current_position.y)
+        self.assertEqual(stubbed_map.STUBBED_X, testobj.current_position.x)
+        self.assertEqual(stubbed_map.STUBBED_Y, testobj.current_position.y)

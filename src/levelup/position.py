@@ -1,14 +1,19 @@
-class position:
-    default_yCoordinate = 2
-    default_xCoordinate = 4
-    
-    def __init__(self, xCoordinate = default_xCoordinate, yCoordinate=default_yCoordinate):
-        self.xCoordinate = xCoordinate
-        self.yCoordinate = yCoordinate
+class Position ():
 
-    def __eq__(self,obj):
-        if self.xCoordinate == obj.xCoordinate and self.yCoordinate == obj.yCoordinate:
+    x = -100
+    y = -100
+
+    def __init__(self, x: int, y: int):
+        self.x = x
+        self.y = y
+
+    # Overriding the equals operator to make sure we are comparing values on positions correctly
+    def __eq__(self, obj):
+        if self.x == obj.x and self.y == obj.y:
             return True
         else:
-            return False 
-        
+            return False
+
+
+
+    
